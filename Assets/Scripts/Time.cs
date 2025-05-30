@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/*
 public class Time
 {
     public float timelimit = 30f;
@@ -10,3 +10,4 @@ public class Time
         timelimit -= Time.deltatime;
     }
 }
+*/
