@@ -8,14 +8,11 @@ public class praya : MonoBehaviour
     {
         //マウス座標取得
         pos = Input.mousePosition;
+        //座標変換
         pos = Camera.main.ScreenToWorldPoint(new Vector3(pos.x, pos.y, 10f));
+        //位置更新
         this.transform.position = pos;
-        if (Input.GetMouseButtonDown(0))
-        {
-
-
-
-        }
+       
     }
 
 
