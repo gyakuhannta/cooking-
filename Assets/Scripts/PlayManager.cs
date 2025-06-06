@@ -7,15 +7,6 @@ using TMPro;
 
 public class PlayManager : MonoBehaviour
 {
-    [SerializeField]
-    private TMP_Text score;
-    [SerializeField]
-    private Text Text1;
-    private Text Text2;
-    private Text Text3;
-    private Text Text4;
-    private Text Text5;
-    private Text Text6;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +17,17 @@ public class PlayManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        if (Input.GetMouseButtonDown(0)) // ç∂ÉNÉäÉbÉN
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                var targetScript = hit.collider.GetComponent<Prefab>();
+                if (targetScript != null)
+                {
+                    targetScript.OnClickedByRay(); // ì∆é©ÇÃä÷êîÇåƒÇ‘
+                }
+            }
+        }
     }
 }
