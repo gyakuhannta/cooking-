@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     private int score = 0;
     public TextMeshProUGUI scoreText;
     public GameObject panel;
+    [SerializeField]
+    private Text Text1, Text2, Text3, Text4, Text5, Text6;
 
     void Awake()
     {
@@ -32,7 +34,4 @@ public class GameManager : MonoBehaviour
             scoreText.text = "Score : " + score;
         }
     }
-
-    
-
 }
