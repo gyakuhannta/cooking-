@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-/*
+
 public class TimeLimit : MonoBehaviour
 {
     public float timeLimit = 30f; //éûä‘êßå¿
@@ -31,4 +31,4 @@ public class TimeLimit : MonoBehaviour
 ;       }
     }
 }
-*/
+
