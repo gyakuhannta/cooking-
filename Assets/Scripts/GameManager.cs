@@ -9,12 +9,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject panel;
     [SerializeField]
-<<<<<<< HEAD
-   
-=======
-    
-
->>>>>>> 1914b5d7963353849b93953c286afacfcef7f90f
 
     void Awake()
     {
@@ -34,8 +28,5 @@ public class GameManager : MonoBehaviour
             scoreText.text = "Score : " + score;
         }
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 1914b5d7963353849b93953c286afacfcef7f90f
 }
