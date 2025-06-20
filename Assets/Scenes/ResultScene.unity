@@ -436,6 +436,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5adae687078d2cf45832641af13e4ec7, type: 3}
   - {fileID: 21300000, guid: b5f2cab93d586e6499fecb86ce02709e, type: 3}
   - {fileID: 21300000, guid: 07c4973773ad87745ba661e5fe73313c, type: 3}
+  dishNameText: {fileID: 1251439267}
 --- !u!4 &631329744
 Transform:
   m_ObjectHideFlags: 0
@@ -680,6 +681,7 @@ MonoBehaviour:
   dishPrefab: []
   dishImage: {fileID: 0}
   dishSprite: []
+  dishNameText: {fileID: 0}
 --- !u!114 &792543365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,6 +736,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: TitleScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 631329743}
+        m_TargetAssemblyTypeName: Select, Assembly-CSharp
+        m_MethodName: ResetSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &792543366
