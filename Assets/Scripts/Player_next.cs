@@ -40,17 +40,17 @@ public class Player_next : MonoBehaviour
                     break;
                 case "syoku_2":
                     countTypeB++;
-                     UpdateCountText();
+                     //UpdateCountText();
                     break;
                 case "syoku_3":
                     countTypeC++;
-                    UpdateCountText();
+                  //  UpdateCountText();
                     break;
-                case "TypeD":
+                case "syoku_4":
                     countTypeD++;
                     // UpdateCountText();
                     break;
-                case "TypeE":
+                case "syoku_5":
                     countTypeE++;
                     // UpdateCountText();
                     break;
@@ -63,9 +63,9 @@ public class Player_next : MonoBehaviour
     // カウントをUIに反映するメソッド
  private void UpdateCountText()
     {
-        countTextA.text = "Type A: " + countTypeA;
-        countTextB.text = "Type B: " + countTypeB;
-        countTextC.text = "Type C: " + countTypeC;
+        countTextA.text = "SCORE: " + countTypeA;
+       // countTextB.text = "Type B: " + countTypeB;
+       // countTextC.text = "Type C: " + countTypeC;
       //  countTextD.text = "Type D: " + countTypeD;
       // countTextE.text = "Type E: " + countTypeE;
     }
