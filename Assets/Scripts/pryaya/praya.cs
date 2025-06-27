@@ -12,10 +12,12 @@ public class praya : MonoBehaviour
         pos = Camera.main.ScreenToWorldPoint(new Vector3(pos.x, pos.y, 10f));
         //à íuçXêV
         this.transform.position = pos;
+        
+      
        
     }
 
-
+    
 
 
 }
