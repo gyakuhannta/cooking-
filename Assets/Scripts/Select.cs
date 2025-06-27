@@ -18,6 +18,7 @@ public class Select : MonoBehaviour
     [Header("リザルト用")]
     public Image dishImage;
     public Sprite[] dishSprite;
+    public Text dishNameText;
 
     private const string WeaponKey = "selectedWeapon";
     private const string dishKey = "selecteddish";
@@ -63,6 +64,22 @@ public class Select : MonoBehaviour
         selecteddish = (dishType)index;
         PlayerPrefs.SetInt(dishKey,index);
         PlayerPrefs.Save();
+
+         // 料理画像をすぐ表示
+        if (dishImage != null && dishSprite.Length > index)
+           {
+               dishImage.sprite = dishSprite[index];
+           }
+        // 料理名テキストを更新
+        if (dishNameText != null)
+        {
+            string[] dishNames = { "カレー", "シチュー", "酢豚","鍋", "お好み焼き" };
+            if (index >= 0 && index < dishNames.Length)
+            {
+                dishNameText.text = dishNames[index];
+            }
+        }
+
     }
 
     void SetupMainScene()
@@ -82,9 +99,15 @@ public class Select : MonoBehaviour
         {
             dishImage.sprite = dishSprite[(int)selecteddish];
         }
+
+        if (dishNameText != null)
+        {
+            string[] dishNames = { "カレー", "シチュー","酢豚", "鍋", "お好み焼き" };
+            dishNameText.text = dishNames[(int)selecteddish];
+        }
     }
 
-    void ResetSelect()
+    public void ResetSelect()
     {
         PlayerPrefs.DeleteKey(WeaponKey);
         PlayerPrefs.DeleteKey(dishKey);
