@@ -819,15 +819,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1792952629}
-        m_TargetAssemblyTypeName: Scenechenge, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+        m_TargetAssemblyTypeName: SettingRoad, Assembly-CSharp
+        m_MethodName: OpenSettingsScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SettingScene
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1792952627
@@ -877,7 +877,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1792952624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 781d1f7bb4476264bbb72a78e0fccf2b, type: 3}
+  m_Script: {fileID: 11500000, guid: ed978b06f4fddf041ad9db010f4d4ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1894896237

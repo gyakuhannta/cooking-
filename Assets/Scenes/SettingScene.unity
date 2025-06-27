@@ -1128,7 +1128,7 @@ GameObject:
   - component: {fileID: 1275750052}
   - component: {fileID: 1275750051}
   - component: {fileID: 1275750050}
-  - component: {fileID: 1275750049}
+  - component: {fileID: 1275750053}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -1156,18 +1156,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -220}
   m_SizeDelta: {x: 357.3311, y: 145.8719}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1275750049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275750047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 781d1f7bb4476264bbb72a78e0fccf2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1275750050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1212,10 +1200,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275750049}
-        m_TargetAssemblyTypeName: Scenechenge, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 1275750053}
+        m_TargetAssemblyTypeName: SettingOut, Assembly-CSharp
+        m_MethodName: GoBack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1262,6 +1250,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275750047}
   m_CullTransparentMesh: 1
+--- !u!114 &1275750053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275750047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed6e8142cd2a6e488a25d79fda696bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1522336556
 GameObject:
   m_ObjectHideFlags: 0
