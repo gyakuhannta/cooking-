@@ -643,7 +643,6 @@ GameObject:
   - component: {fileID: 1541920043}
   - component: {fileID: 1541920041}
   - component: {fileID: 1541920049}
-  - component: {fileID: 1541920050}
   m_Layer: 0
   m_Name: geme
   m_TagString: Untagged
@@ -773,7 +772,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541920040}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.57, y: 2.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -787,34 +786,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541920040}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f802e0969f58b3048b0da6de759f5992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 2687791732217966960, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
-  spawnIntervel: 1
-  spawnRangeX: 10
-  fallSpeed: 5
---- !u!114 &1541920050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541920040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d15f445273d26e47917eebc2ac7269e, type: 3}
+  m_Script: {fileID: 11500000, guid: 09466e7eb4deeaa4db08628df6185d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text1: {fileID: 0}
-  Text2: {fileID: 0}
-  Text3: {fileID: 0}
-  Text4: {fileID: 0}
-  Text5: {fileID: 0}
-  id: 0
-  Rid: 0
+  siyoku_1: {fileID: 877803233773034510, guid: 15e5481fe43488c46af8ed3a15f157ec, type: 3}
+  siyoku_2: {fileID: 8019683780794353382, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
+  siyoku_3: {fileID: 3710347363810304886, guid: 5cf626dc856ce0b41879042bc85ef289, type: 3}
+  siyoku_4: {fileID: 8019683780794353382, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
+  siyoku_5: {fileID: 3710347363810304886, guid: 5cf626dc856ce0b41879042bc85ef289, type: 3}
+  siyoku_6: {fileID: 8019683780794353382, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
+  siyoku_7: {fileID: 8019683780794353382, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
+  siyoku_8: {fileID: 877803233773034510, guid: 15e5481fe43488c46af8ed3a15f157ec, type: 3}
+  siyoku_9: {fileID: 3710347363810304886, guid: 5cf626dc856ce0b41879042bc85ef289, type: 3}
+  randm_x: 10
+  follspid: 5
 --- !u!1 &1736993123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,7 +1152,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 330585546}
   - {fileID: 410087041}
-  - {fileID: 1541920048}
-  - {fileID: 1157193825}
   - {fileID: 543569403}
+  - {fileID: 1157193825}
   - {fileID: 1736993128}
+  - {fileID: 1541920048}
