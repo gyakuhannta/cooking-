@@ -1,0 +1,72 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Player_next : MonoBehaviour
+{
+    // カウント用の変数（5種類のオブジェクト）
+    private int countTypeA = 0;
+    private int countTypeB = 0;
+    private int countTypeC = 0;
+    private int countTypeD = 0;
+    private int countTypeE = 0;
+
+    // UI Text コンポーネント
+    public Text countTextA;
+    public Text countTextB;
+    public Text countTextC;
+    public Text countTextD;
+    public Text countTextE;
+
+    void Update()
+    {
+        // マウスカーソルの位置を3D空間のワールド座標に変換
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        // 3Dレイキャストを使って、カーソル位置にあるオブジェクトを検出
+        RaycastHit hit;
+
+        // レイキャストが何かにヒットした場合
+        if (Physics.Raycast(ray, out hit))
+        {
+            // オブジェクトがカーソルの下にあることが判定できた
+            Debug.Log("Hit Object: " + hit.collider.gameObject.name);
+            // オブジェクトのタグに基づいてカウントを増やす
+            string objectTag = hit.collider.gameObject.tag;
+            switch (objectTag)
+            {
+                case "syoku_1":
+                    countTypeA++;
+                    UpdateCountText();
+                    break;
+                case "syoku_2":
+                    countTypeB++;
+                     UpdateCountText();
+                    break;
+                case "syoku_3":
+                    countTypeC++;
+                    UpdateCountText();
+                    break;
+                case "TypeD":
+                    countTypeD++;
+                    // UpdateCountText();
+                    break;
+                case "TypeE":
+                    countTypeE++;
+                    // UpdateCountText();
+                    break;
+            }
+            // オブジェクトを削除
+            Destroy(hit.collider.gameObject);
+        }
+    }
+
+    // カウントをUIに反映するメソッド
+ private void UpdateCountText()
+    {
+        countTextA.text = "Type A: " + countTypeA;
+        countTextB.text = "Type B: " + countTypeB;
+        countTextC.text = "Type C: " + countTypeC;
+      //  countTextD.text = "Type D: " + countTypeD;
+      // countTextE.text = "Type E: " + countTypeE;
+    }
+}
