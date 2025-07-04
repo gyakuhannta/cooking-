@@ -1170,6 +1170,7 @@ MonoBehaviour:
   siyoku_9: {fileID: 3710347363810304886, guid: 5cf626dc856ce0b41879042bc85ef289, type: 3}
   randm_x: 10
   follspid: 5
+  _repeatSpan: 0.5
 --- !u!114 &1541920050
 MonoBehaviour:
   m_ObjectHideFlags: 0
