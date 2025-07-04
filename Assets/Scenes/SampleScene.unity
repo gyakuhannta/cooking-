@@ -914,7 +914,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2129475783}
   - {fileID: 1870951942}
   - {fileID: 1875704098}
   - {fileID: 118905954}
@@ -1159,12 +1158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09466e7eb4deeaa4db08628df6185d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  siyoku_1: {fileID: 877803233773034510, guid: 15e5481fe43488c46af8ed3a15f157ec, type: 3}
-  siyoku_2: {fileID: 8019683780794353382, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
-  siyoku_3: {fileID: 3710347363810304886, guid: 5cf626dc856ce0b41879042bc85ef289, type: 3}
-  siyoku_4: {fileID: 8019683780794353382, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
-  siyoku_5: {fileID: 3710347363810304886, guid: 5cf626dc856ce0b41879042bc85ef289, type: 3}
-  siyoku_6: {fileID: 8019683780794353382, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
+  siyoku_1: {fileID: 2225374992561045476, guid: 3efe99710af0cfd49831a8939e6d8bbf, type: 3}
+  siyoku_2: {fileID: 3710347363810304886, guid: 5cf626dc856ce0b41879042bc85ef289, type: 3}
+  siyoku_3: {fileID: 2410008472751536697, guid: c7a76c5b45762994198815290b2c1ce8, type: 3}
+  siyoku_4: {fileID: 673534863590203640, guid: c2d7b488f520b034abfa54beff811ccd, type: 3}
+  siyoku_5: {fileID: 1009713934602541308, guid: 4df7739ace74c3d4ba48e21ddf88db8f, type: 3}
+  siyoku_6: {fileID: 877803233773034510, guid: 15e5481fe43488c46af8ed3a15f157ec, type: 3}
   siyoku_7: {fileID: 8019683780794353382, guid: b0f72f59405ee3942a1327c4b8f3c859, type: 3}
   siyoku_8: {fileID: 877803233773034510, guid: 15e5481fe43488c46af8ed3a15f157ec, type: 3}
   siyoku_9: {fileID: 3710347363810304886, guid: 5cf626dc856ce0b41879042bc85ef289, type: 3}
@@ -1731,11 +1730,11 @@ RectTransform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1157193825}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -661, y: 462}
+  m_AnchoredPosition: {x: -341, y: 642}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2129475784
@@ -1844,6 +1843,7 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 543569403}
+  - {fileID: 2129475783}
   - {fileID: 1157193825}
   - {fileID: 1736993128}
   - {fileID: 1541920048}
