@@ -23,6 +23,8 @@ public class Select : MonoBehaviour
     public Text weaponnameText;
     public Sprite[] weaponsprite;
     public Image weaponImage;
+    public Sprite[] weaponsprite2;
+    public Image weaponImage2;
 
     private const string WeaponKey = "selectedWeapon";
     private const string dishKey = "selecteddish";
@@ -41,7 +43,7 @@ public class Select : MonoBehaviour
     {
         string scene = SceneManager.GetActiveScene().name;
 
-        if (scene == "MainScene")
+        if (scene == "SampleScene")
         {
             SetupMainScene();
         }
@@ -111,12 +113,46 @@ public class Select : MonoBehaviour
 
     void SetupMainScene()
     {
-        if(weaponPrefab.Length > 0)
+       /* if(weaponPrefab.Length > 0)
         {
             for(int i = 0; i < weaponPrefab.Length; i++)
                 weaponPrefab[i]?.SetActive(i == (int)selectedWeapon);
+        }*/
+        int index = (int)selectedWeapon;
+
+        // 武器画像を表示
+        if (weaponImage != null && weaponsprite.Length > index)
+        {
+            weaponImage.sprite = weaponsprite[index];
+        }
+        // 武器画像を表示
+        if (weaponImage2 != null && weaponsprite2.Length > index)
+        {
+            weaponImage2.sprite = weaponsprite2[index];
+        }
+        // 武器名テキストを表示
+        if (weaponnameText != null)
+        {
+            string[] weaponnames = { "包丁", "斧", "Nodata", "Nodata", "Nodata" };
+            if (index >= 0 && index < weaponnames.Length)
+            {
+                weaponnameText.text = weaponnames[index];
+            }
         }
 
+        // 武器説明テキストを表示
+        if (weapontext != null)
+        {
+            string[] weaponDescriptions = {
+            "マウスカーソルの下にある具罪を切るぞ！",
+            "一定範囲の具罪を右クリックで切るぞ！",
+            "Nodata", "Nodata", "Nodata"
+        };
+            if (index >= 0 && index < weaponDescriptions.Length)
+            {
+                weapontext.text = weaponDescriptions[index];
+            }
+        }
     }
 
     void SetupResultScene()

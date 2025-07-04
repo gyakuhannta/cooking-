@@ -542,8 +542,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 309, y: 482}
-  m_SizeDelta: {x: 106.2774, y: 112.62}
+  m_AnchoredPosition: {x: 300.39, y: 463}
+  m_SizeDelta: {x: 130.78, y: 131.4203}
   m_Pivot: {x: 0.5, y: 0.49999997}
 --- !u!114 &252416067
 MonoBehaviour:
@@ -1769,7 +1769,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &846935099
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2796,7 +2796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6246f2c6d203c924f83e9a732155fc51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f1a8dbf89afc8c41a2f3dcf80c65be4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4070,20 +4070,22 @@ MonoBehaviour:
   dishImage: {fileID: 2021187461}
   dishSprite:
   - {fileID: 21300000, guid: 23f84e81ed51d464c89b0c5f7ea0ba26, type: 3}
-  - {fileID: 21300000, guid: be74596b8316dfb4abf239685eb94742, type: 3}
-  - {fileID: 21300000, guid: 5adae687078d2cf45832641af13e4ec7, type: 3}
-  - {fileID: 21300000, guid: b5f2cab93d586e6499fecb86ce02709e, type: 3}
-  - {fileID: 21300000, guid: 07c4973773ad87745ba661e5fe73313c, type: 3}
+  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
+  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
+  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
+  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
   dishNameText: {fileID: 624346925}
   weapontext: {fileID: 958104475}
   weaponnameText: {fileID: 317830751}
   weaponsprite:
   - {fileID: 21300000, guid: 54aa40909abc06b4bacd0414f3d17ca5, type: 3}
-  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
+  - {fileID: 21300000, guid: ae4c2892490c1d2418b91d1d7f9a8a2c, type: 3}
   - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
   - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
   - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
   weaponImage: {fileID: 2002306541}
+  weaponsprite2: []
+  weaponImage2: {fileID: 0}
 --- !u!114 &2036029136
 MonoBehaviour:
   m_ObjectHideFlags: 0
