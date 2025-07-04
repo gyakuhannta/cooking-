@@ -17,7 +17,7 @@ public class object_min : MonoBehaviour
     public float randm_x = 10f;//¶¬”ÍˆÍ
     public float follspid = 5f;//—‰º‘¬“x
     float[] item;
-    private float _repeatSpan;    //ŒJ‚è•Ô‚·ŠÔŠu
+    public float _repeatSpan = 0.5f;    //ŒJ‚è•Ô‚·ŠÔŠu
     private float _timeElapsed;   //Œo‰ßŠÔ
 
     private float rin;//’Š‘IŒ‹‰Ê‚ğ“n‚·—p
@@ -62,7 +62,7 @@ public class object_min : MonoBehaviour
 
     private void Start()
     {
-        _repeatSpan = 0.5f;    //ÀsŠÔŠu‚ğ1‚Éİ’è
+            //ÀsŠÔŠu‚ğ1‚Éİ’è
         _timeElapsed = 0;   //Œo‰ßŠÔ‚ğƒŠƒZƒbƒg
 
 
