@@ -668,6 +668,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1001 &479073250
 PrefabInstance:
@@ -875,6 +876,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 482722834}
   m_CullTransparentMesh: 1
 >>>>>>> 画面戻し
+=======
+>>>>>>> 1bbeba954621208ea2e720dea6b0fe44a86d95e6
 --- !u!1 &543569400
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +957,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!1 &558361648
@@ -1101,6 +1105,8 @@ MonoBehaviour:
   - {fileID: 1541920043}
   - {fileID: 929612208}
 >>>>>>> 画面戻し
+=======
+>>>>>>> 1bbeba954621208ea2e720dea6b0fe44a86d95e6
 --- !u!1 &616196440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1266,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 845325417}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &929612203 stripped
 GameObject:
@@ -1360,6 +1367,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 991031137}
   m_CullTransparentMesh: 1
 >>>>>>> 画面戻し
+=======
+>>>>>>> 1bbeba954621208ea2e720dea6b0fe44a86d95e6
 --- !u!1 &1098170058
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class Select : MonoBehaviour
     public Image dishImage;
     public Sprite[] dishSprite;
     public Text dishNameText;
+<<<<<<< HEAD
 
     public Text weapontext;
     public Text weaponnameText;
@@ -27,6 +28,8 @@ public class Select : MonoBehaviour
     public Sprite[] weaponsprite2;
     public Image weaponImage2;
 
+=======
+>>>>>>> 1bbeba954621208ea2e720dea6b0fe44a86d95e6
 
     private const string WeaponKey = "selectedWeapon";
     private const string dishKey = "selecteddish";
