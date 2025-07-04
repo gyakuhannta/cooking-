@@ -19,6 +19,7 @@ public class Player_next : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return;  // ポーズ中なら何もしない
         // マウスカーソルの位置を3D空間のワールド座標に変換
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
