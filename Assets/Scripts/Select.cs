@@ -19,17 +19,12 @@ public class Select : MonoBehaviour
     public Image dishImage;
     public Sprite[] dishSprite;
     public Text dishNameText;
-<<<<<<< HEAD
-
     public Text weapontext;
     public Text weaponnameText;
     public Sprite[] weaponsprite;
     public Image weaponImage;
     public Sprite[] weaponsprite2;
     public Image weaponImage2;
-
-=======
->>>>>>> 1bbeba954621208ea2e720dea6b0fe44a86d95e6
 
     private const string WeaponKey = "selectedWeapon";
     private const string dishKey = "selecteddish";
@@ -68,6 +63,29 @@ public class Select : MonoBehaviour
         selectedWeapon　= (WeaponType)index;
         PlayerPrefs.SetInt(WeaponKey,index);
         PlayerPrefs.Save();
+
+        // 武器画像をすぐ表示
+        if (weaponImage != null && weaponsprite.Length > index)
+        {
+            weaponImage.sprite = weaponsprite[index];
+        }
+        // 武器説明テキストを更新
+        if (weaponnameText != null)
+        {
+            string[] weaponnames = {"包丁", "斧", "Nodata", "Nodata", "Nodata" };
+            if (index >= 0 && index < weaponnames.Length)
+            {
+                weaponnameText.text = weaponnames[index];
+            }
+        }
+        if (weapontext != null)
+        {
+            string[] weaponnames = { "マウスカーソルの下にある具罪を切るぞ！", "一定範囲の具罪を右クリックで切るぞ！", "Nodata", "Nodata", "Nodata" };
+            if (index >= 0 && index < weaponnames.Length)
+            {
+                weapontext.text = weaponnames[index];
+            }
+        }
     }
 
     public void selectDish(int index)
@@ -84,7 +102,7 @@ public class Select : MonoBehaviour
         // 料理名テキストを更新
         if (dishNameText != null)
         {
-            string[] dishNames = { "カレー", "シチュー", "酢豚","鍋", "お好み焼き" };
+            string[] dishNames = { "カレー", "Nodata", "Nodata", "Nodata", "Nodata" };
             if (index >= 0 && index < dishNames.Length)
             {
                 dishNameText.text = dishNames[index];
@@ -147,7 +165,7 @@ public class Select : MonoBehaviour
 
         if (dishNameText != null)
         {
-            string[] dishNames = { "カレー", "シチュー","酢豚", "鍋", "お好み焼き" };
+            string[] dishNames = { "カレー", "Nodata", "Nodata", "Nodata", "Nodata" };
             dishNameText.text = dishNames[(int)selecteddish];
         }
     }

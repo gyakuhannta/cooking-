@@ -9,6 +9,7 @@ public class Player_next : MonoBehaviour
     private int countTypeC = 0;
     private int countTypeD = 0;
     private int countTypeE = 0;
+    private int countTypeF = 0;
 
     // UI Text コンポーネント
     public Text countTextA;
@@ -17,8 +18,10 @@ public class Player_next : MonoBehaviour
     public Text countTextD;
     public Text countTextE;
 
+    public int total;
     void Update()
     {
+        if (Time.timeScale == 0f) return;  // ポーズ中なら何もしない
         // マウスカーソルの位置を3D空間のワールド座標に変換
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -36,7 +39,7 @@ public class Player_next : MonoBehaviour
             {
                 case "syoku_1":
                     countTypeA++;
-                    UpdateCountText();
+                  
                     break;
                 case "syoku_2":
                     countTypeB++;
@@ -54,19 +57,30 @@ public class Player_next : MonoBehaviour
                     countTypeE++;
                     // UpdateCountText();
                     break;
+                case "syoku_6":
+                    countTypeF++;
+                    // UpdateCountText();
+                    break;
             }
+            total = countTypeA + countTypeB + countTypeC + countTypeD + countTypeE + countTypeF;
+
             // オブジェクトを削除
-            Destroy(hit.collider.gameObject);
+            Destroy(hit.collider.gameObject);  
+            UpdateCountText();
+            SaveScore();
         }
     }
 
     // カウントをUIに反映するメソッド
  private void UpdateCountText()
     {
-        countTextA.text = "SCORE: " + countTypeA;
-       // countTextB.text = "Type B: " + countTypeB;
-       // countTextC.text = "Type C: " + countTypeC;
-      //  countTextD.text = "Type D: " + countTypeD;
-      // countTextE.text = "Type E: " + countTypeE;
+        countTextA.text = "SCORE: " + total;
+      
+    }
+    public void SaveScore()
+    {
+        int totalScore =+ total;
+        PlayerPrefs.SetInt("FinalScore", totalScore);
+        PlayerPrefs.Save();
     }
 }

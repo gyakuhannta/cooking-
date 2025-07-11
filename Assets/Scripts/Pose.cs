@@ -4,34 +4,56 @@ using UnityEngine.UI;
 public class Pose : MonoBehaviour
 {
     public GameObject panel;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   
+    public MonoBehaviour[] scriptsToPause;
+
+    private bool isPaused = false;  // ポーズ状態を管理
+
     void Start()
     {
-        //パネルオフ
         panel.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //ポーズ処理
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            panel.SetActive(true);
-            
+            if (isPaused)
+            {
+                // ポーズ解除
+                HidePanel();
+            }
+            else
+            {
+                // ポーズ開始
+                ShowPanel();
+            }
         }
     }
 
-    //パネル展開(ボタン用)
     public void ShowPanel()
     {
         panel.SetActive(true);
-        Time.timeScale = 0f; // ゲーム全体を停止
+        Time.timeScale = 0f;
+
+        foreach (var script in scriptsToPause)
+        {
+            script.enabled = false;
+        }
+
+        isPaused = true;
     }
-    //パネル収縮(ボタン用)
+
     public void HidePanel()
     {
         panel.SetActive(false);
-        Time.timeScale = 1f; // 再開
+
+        foreach (var script in scriptsToPause)
+        {
+            script.enabled = true;
+        }
+
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 }

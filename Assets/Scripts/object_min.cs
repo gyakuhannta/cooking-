@@ -10,14 +10,14 @@ public class object_min : MonoBehaviour
     public GameObject siyoku_4;
     public GameObject siyoku_5;
     public GameObject siyoku_6;
-    public GameObject siyoku_7;
+   /* public GameObject siyoku_7;
     public GameObject siyoku_8;
-    public GameObject siyoku_9;
+    public GameObject siyoku_9;*/
 
     public float randm_x = 10f;//生成範囲
     public float follspid = 5f;//落下速度
     float[] item;
-    public float _repeatSpan = 0.5f;    //繰り返す間隔
+    private float _repeatSpan;    //繰り返す間隔
     private float _timeElapsed;   //経過時間
 
     private float rin;//抽選結果を渡す用
@@ -62,7 +62,7 @@ public class object_min : MonoBehaviour
 
     private void Start()
     {
-            //実行間隔を1に設定
+        _repeatSpan = 0.5f;    //実行間隔を1に設定
         _timeElapsed = 0;   //経過時間をリセット
 
 
@@ -79,7 +79,7 @@ public class object_min : MonoBehaviour
         {
 
 
-            item = new float[10];
+            item = new float[7];
             //抽選確率
             item[0] = 20;
             item[1] = 15;
@@ -88,9 +88,9 @@ public class object_min : MonoBehaviour
             item[4] = 10;
             item[5] = 5;
             item[6] = 10;
-            item[7] = 10;
-            item[8] = 5;
-            item[9] = 20;
+           // item[7] = 10;
+            //item[8] = 5;
+           // item[9] = 20;
             //抽選メソッドを呼ぶ
             var result = Choose(item);
 
@@ -129,10 +129,10 @@ public class object_min : MonoBehaviour
             case 4:
                 Instantiate(siyoku_5, spawnPosition, Quaternion.identity).AddComponent<FallDown>().fallSpeed = follspid;
                 break;
-            case 5:
+           case 5:
                 Instantiate(siyoku_6, spawnPosition, Quaternion.identity).AddComponent<FallDown>().fallSpeed = follspid;
                 break;
-            case 6:
+           /*  case 6:
                 Instantiate(siyoku_7, spawnPosition, Quaternion.identity).AddComponent<FallDown>().fallSpeed = follspid;
                 break;
             case 7:
@@ -140,7 +140,7 @@ public class object_min : MonoBehaviour
                 break;
             case 8:
                 Instantiate(siyoku_9, spawnPosition, Quaternion.identity).AddComponent<FallDown>().fallSpeed = follspid;
-                break;
+                break;*/
             default:
                 break;
 

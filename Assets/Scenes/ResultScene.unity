@@ -406,6 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631329744}
   - component: {fileID: 631329743}
+  - component: {fileID: 631329745}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -432,10 +433,10 @@ MonoBehaviour:
   dishImage: {fileID: 1315195054}
   dishSprite:
   - {fileID: 21300000, guid: 23f84e81ed51d464c89b0c5f7ea0ba26, type: 3}
-  - {fileID: 21300000, guid: be74596b8316dfb4abf239685eb94742, type: 3}
-  - {fileID: 21300000, guid: 5adae687078d2cf45832641af13e4ec7, type: 3}
-  - {fileID: 21300000, guid: b5f2cab93d586e6499fecb86ce02709e, type: 3}
-  - {fileID: 21300000, guid: 07c4973773ad87745ba661e5fe73313c, type: 3}
+  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
+  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
+  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
+  - {fileID: 21300000, guid: 231d477aafa330247a50a5efb27aa5ec, type: 3}
   dishNameText: {fileID: 1251439267}
   weapontext: {fileID: 0}
   weaponnameText: {fileID: 0}
@@ -458,6 +459,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &631329745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631329742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b07af1008c43240b1f4bd166041c02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 707003195}
 --- !u!1 &639135019
 GameObject:
   m_ObjectHideFlags: 0
