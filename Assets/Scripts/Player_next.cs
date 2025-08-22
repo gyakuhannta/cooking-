@@ -11,6 +11,15 @@ public class Player_next : MonoBehaviour
     private int countTypeE = 0;
     private int countTypeF = 0;
 
+
+    public GameObject dan_1;
+    public GameObject dan_2;
+    public GameObject dan_3;
+    public GameObject dan_4;
+    public GameObject dan_5;
+    public GameObject dan_6;
+    
+    
     // UI Text コンポーネント
     public Text countTextA;
     public Text countTextB;
@@ -31,34 +40,49 @@ public class Player_next : MonoBehaviour
         // レイキャストが何かにヒットした場合
         if (Physics.Raycast(ray, out hit))
         {
+            Vector3 ber = new Vector3(hit.point.x, hit.point.y, hit.point.z);
             // オブジェクトがカーソルの下にあることが判定できた
             Debug.Log("Hit Object: " + hit.collider.gameObject.name);
+
             // オブジェクトのタグに基づいてカウントを増やす
             string objectTag = hit.collider.gameObject.tag;
+
             switch (objectTag)
             {
                 case "syoku_1":
                     countTypeA++;
+                    Destroy(hit.collider.gameObject);
+                    Instantiate(dan_1,ber,Quaternion.identity).AddComponent<Rigidbody>();
                   
                     break;
                 case "syoku_2":
                     countTypeB++;
+                    Destroy(hit.collider.gameObject);
+                    Instantiate(dan_2, ber, Quaternion.identity).AddComponent<Rigidbody>();
                      //UpdateCountText();
                     break;
                 case "syoku_3":
                     countTypeC++;
+                    Destroy(hit.collider.gameObject);
+                    Instantiate(dan_3, ber, Quaternion.identity).AddComponent<Rigidbody>();
                   //  UpdateCountText();
                     break;
                 case "syoku_4":
                     countTypeD++;
+                    Destroy(hit.collider.gameObject);
+                    Instantiate(dan_4, ber, Quaternion.identity).AddComponent<Rigidbody>();
                     // UpdateCountText();
                     break;
                 case "syoku_5":
                     countTypeE++;
+                    Destroy(hit.collider.gameObject);
+                    Instantiate(dan_5, ber, Quaternion.identity).AddComponent<Rigidbody>();
                     // UpdateCountText();
                     break;
                 case "syoku_6":
                     countTypeF++;
+                    Destroy(hit.collider.gameObject);
+                    Instantiate(dan_6, ber, Quaternion.identity).AddComponent<Rigidbody>();
                     // UpdateCountText();
                     break;
             }
