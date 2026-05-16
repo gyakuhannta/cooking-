@@ -79,12 +79,12 @@ public class Player_next : MonoBehaviour
                     Instantiate(dan_5, ber, Quaternion.identity).AddComponent<Rigidbody>();
                     // UpdateCountText();
                     break;
-                case "syoku_6":
+                /*case "syoku_6":
                     countTypeF++;
                     Destroy(hit.collider.gameObject);
                     Instantiate(dan_6, ber, Quaternion.identity).AddComponent<Rigidbody>();
                     // UpdateCountText();
-                    break;
+                    break;*/
             }
             total = countTypeA + countTypeB + countTypeC + countTypeD + countTypeE + countTypeF;
 

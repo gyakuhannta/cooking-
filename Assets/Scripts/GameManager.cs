@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
 
     public GameObject panel;
-    [SerializeField]
+ 
 
     void Awake()
     {
